@@ -1,0 +1,297 @@
+TEST 1:
+Test at depth 3 with chess.com and getting reactions from Action Library
+
+1. d3 Nf6      2820 positions 
+2. Bf4 d5      3464 
+3. Nc3 Bf5     5427 
+4. e3 e6       5536 
+5. Be2 Nc6     5163 
+6. h3 e5       7154 
+7. g4 Bg6      5097
+8. g5 Nd7      1283
+9. Qd2 exf4    3299 
+10. Bf3 Qxg5    2918
+11. Bxd5 O-O-O  585 
+12. h4 Qf5      2816 
+13. Nge2 Bd6    707
+14. e4 Qe5      1806 
+15. Rh3 f5      1297 
+16. a3 Kb8      1938 
+17. f3 fxe4     2187 
+
+SUM = 7935
+Average position number = 3146.88
+
+79.35%
+
+Test at depth 3 with chess.com using ordinary Minimax and getting all legal moves
+
+1. d3 Nf6      2866 positions
+2. Nf3 Ng4     3920 
+3. c4 Nc6      12280 
+4. e4 Nf6      16779 
+5. Be2 e5      14787 
+6. a3 Bc5      14196 
+7. Bd2 Rg8     21596 
+8. Qa4 Qe7     24536 
+9. Bc3 Kd8     28066 
+10. Ra2 Qd6     28457 
+11. h3 Qe6      29098 
+12. Qb5 Bd6     20496 
+13. Nbd2 a6     30201 
+14. Qa4 b5      31664 
+15. cxb5 Qxa2   32493 
+16. b3 Ne7      17249 
+17. Nxe5 Bxe5   8701 
+
+SUM = 337 388
+Average position number = 19846.17
+average difference = 16699.29
+
+15.94%
+
+
+=========================================================================================================
+TEST 2:
+Test at depth 3 with chess.com and getting reactions from Action Library
+
+1. d3 Nf6       2820 
+2. Nf3 d5       3133 
+3. e3 Bf5       4665 
+4. Bd2 Nc6      5309 
+5. Bc3 e5       3727 
+6. Bxe5 Nxe5    1937 
+7. Nfd2 h5      899 
+8. Nc3 Nxd3+    3182 
+9. cxd3 b5      655 
+10. Qc1 g6      1705 
+11. Be2 h4      3037 
+12. a3 g5       3955 
+13. Nxb5 d4     647 
+14. Qc4 a6      780 
+15. Nxc7 
+
+SUM = 36451
+
+36.45%
+========================================================================================================
+TEST 4:                        
+Test at depth 3 with chess.com and getting reactions from Action Library
+
+1. d3 Nf6       2820        
+2. e3 e5        3024        
+3. Nd2 d5       4435
+4. Ngf3 Nc6     1323
+5. h3 Bf5       6672
+6. b3 Bc5       9250
+7. Be2 Qe7      10087
+8. a3 Bxa3      8666
+9. Rxa3 Kd8     808
+10. Bb2 
+SUM = 47085
+
+ordinary minimax:
+1. d3 Nf6      2866
+2. Nf3 Ng4     3920
+3. Nc3 Nc6     14694
+4. Nd2 Nge5    16430
+5. h3 d5       11406
+6. Nb5 Bf5     13092
+7. e4 dxe4      9104
+8. Nc4 Nxc4     12529
+9. Nc3 Qd4      23018
+10. Qe2
+SUM = 107059
+
+AVERAGE = 43.98%
+========================================================================================================
+
+TEST 5:
+Test at depth 3 with chess.com and getting reactions from Action Library
+
+1. d3 Nf6       2820
+2. Bd2 e5       2939
+3. f4 exf4      2030
+4. Nf3 Nd5      4084
+5. Nc3 Nxc3     2808
+6. Qc1 Nd5      2394
+7. c4 Nf6       2303
+8. c5 Nd5       2390
+9. h3 Nc6       3282
+10. Kf2 f5      4016
+11. b4 a5       3050
+12. Kg1 Qf6     2357
+13. Be1 Be7     2676
+14. Bf2 b6      2505
+15. Kh2 Qe6     5001
+16. bxa5 bxc5   1691
+17. Rb1 Rg8     6550
+18. a3 g6       6891
+19. Bxc5 Ne5    881
+20. d4 Bd6      1999
+21. a6 Rxa6     1102
+22. Ng5 Ng4+    1395
+23. hxg4 h5     689
+24. Nxe6 dxe6   243
+25. Rb8 Kf7     880
+26. gxh5 gxh5   599
+27. Qa1 Re8     704
+28. Bxd6 Rxd6   287
+29. Kg1 Rh8     1574
+30. Qe1 h4      1090
+31. Qc1 Rd7     1811
+32. Kf2 Re7     2284
+33. Qc4 Kg7     767
+34. Ra8 Rf7     739
+35. Qc1 Re7     1366
+36. Qc5 Kg6     599
+SUM =79796
+
+
+ordinary minimax:
+1. Nc3 Nf6      3348
+2. e3 e5        6771
+3. b3 Bb4       13354
+4. Nge2 Nc6     21202
+5. h3 Na5       22262
+6. d4 e4        21911
+7. Bd2 Nc6      19669
+8. Na4 Bxd2+    13199
+9. Kxd2 d5      14554
+10. c4 dxc4     11938
+11. Nb2 cxb3    10087
+12. Nc3 bxa2    10689
+13. Qa4 Be6     15698
+14. Qb5 Rb8     19075
+15. Qa4 Rg8     22362
+16. g4 Qd7      20522
+17. Bg2 Kd8     28603
+18. Bf1 Kc8     27589
+19. Be2 Nxd4    24876
+20. Qxd4 Qc6    12167
+21. Bd3 exd3    31230
+22. Rhc1 Rd8    30515
+23. Qe5 Ra8     42401
+24. Rg1 h5      48413
+25. g5 Nd7      28168
+26. Qf4 Bb3     41402
+27. g6 fxg6     40353
+28. Rxg6 Qxg6   19724
+29. Rc1 Rf8     63406
+30. Nxd3 Rxf4   42827
+31. Nxf4 Qd6+   19620
+32. Nfd5 Bxd5   27869
+33. f3 Bxf3+    36182
+34. Ke1 Qg3+    23170
+35. Kf1 Qxh3+   19495
+36. Kg1 Qg2#    13610
+SUM = 868261
+
+9.19%
+==============================================================================
+TEST 6: depth 3
+1. Nc3 Nf6      2784
+2. h3 e5        2965
+3. Nf3 Nc6      3241
+4. b3 d5        5350
+5. Rb1 Bf5      6921
+6. Nh4 Be4      1240
+SUM = 22501
+
+odrdinary:
+1. d3 Nf6       2866
+2. Nc3 Ng4      5679
+3. e4 Nf6       12836
+4. Nf3 Nc6      8020
+5. Bg5 Ng4      5619
+6. Bh6 gxh6     15075
+SUM = 50095
+
+44.91%
+=================================================================================
+TEST 7: depth:3
+1. Nc3 Nf6      2784
+2. d4 Nc6       3799
+3. Nf3 e5       4395
+4. Bg5 exd4     2263
+5. Ne4 Bb4+     1418
+6. Nc3 Bxc3+    2465
+7. bxc3 d5      1832
+8. h3 Bf5       2525
+9. g4 Be4       3572
+10. Bh4 h6      1603
+11. Bxf6 Qxf6   674
+12. cxd4 Nxd4   3111
+13. Nxd4 c5     3271
+14. Nb5 O-O     855
+15. a3 Rfc8     1390
+16. Rg1 g6      1152
+17. f3 Qh4+     1555
+18. Kd2 f5      802
+19. fxe4 fxe4   257
+20. Nd6 Rc7     689
+21. Bg2 a6      1435
+22. Rf1 Rf8     2426
+23. c3 g5       2054
+24. Rxf8+ Kxf8  116
+SUM = 46713
+
+ordinary
+1. d3 Nf6       2866
+2. Na3 Ng4      2968
+3. c4 Ne5       12051
+4. d4 Ng4       3349
+5. Nb1 Nc6      11174
+6. h3 Nf6       6104
+7. Bf4 Nh5      12012
+8. Bc1 Nf6      10834
+9. d5 Ne5       5068
+10. e4 Nxe4     13749
+11. Be3 Rg8     19381
+12. Qd4 Nxf2    6438
+13. a3 Nxh1     12158
+14. Nc3 d6      6633
+15. Qe4 Ng3     17471
+16. Qxh7 Nxf1   4343
+17. Kxf1 Nxc4   3206
+18. Bf2 Nd2+    2985
+19. Ke2 Nb3     3140
+20. Ra2 Nc1+    2759
+21. Kd1 Nxa2    3569
+22. Nxa2 Bg4+   1903
+23. Kc2 Bd1+    2650
+24. Kb1 Bb3     2295  
+SUM = 169106
+
+27.62% done
+========================================================================================================
+results for 10 games:
+
+1- No. positions:
+27.62% + 44.91% + 79.35% + 15.94% + 36.45% + 43.98% + 9.19% + 44.91% + 84.14% + 86.82% = 47.33% 
+
+2- Performance testing: Tesing my custom evaluation function with fixed move generation of minimax
+==> ( Minimax + myCustomEval ) VS ( Minimax + ordinary Eval From Internet):
+loss: 0 win: 8 draw: 2
+
+==> ( Minimax + myCustomEval ) VS ( Minimax + PaperEval ):
+loss: 3 win: 5 draw: 2
+loss: 1 win: 4 draw: 5
+loss: 4 win: 5 draw: 1
+TOTAL:
+loss: 8 win: 14 draw: 8
+
+3- Overall perfomance testing: 
+==> ( Minimax + CUstomEval + myDB ) VS ( Paper )
+loss: 1 win: 4 draw: 5
+loss: 4 win: 5 draw: 1
+loss: 1 win: 3 draw: 6
+TOTAL:
+loss: 6 win: 12 draw: 12
+
+4- Similarity: ==============> BAD
+loss: 6 win: 2 draw: 2
+loss: 2 win: 3 draw: 5
+loss: 2 win: 4 draw: 4
+TOTAL:
+loss: 13 win: 7 draw: 10
