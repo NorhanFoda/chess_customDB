@@ -295,3 +295,7 @@ loss: 2 win: 3 draw: 5
 loss: 2 win: 4 draw: 4
 TOTAL:
 loss: 13 win: 7 draw: 10
+
+
+
+win: 1
