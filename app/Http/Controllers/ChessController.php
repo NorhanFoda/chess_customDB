@@ -18,8 +18,9 @@ class ChessController extends Controller
     }
 
     public function getAllReactions(){
+        return Action::all();
         //return Action::take(500)->get();
-        return Action::where('id', '>', 89990)->get();
+        // return Action::where('id', '>', 89990)->get();
     }
 
     public function saveReaction($white_move, $black_reaction, $white_move_fen, $black_reaction_fen, $encodingStr, $eval){
@@ -38,9 +39,14 @@ class ChessController extends Controller
     }
 
     public function updateEval($id, $eval){ 
+        return 'update';
         $action = Action::find($id);
         $action->eval = $eval;
         $action->save();
         return 'eval updated  '.$id.'    '.$eval;
+    }
+
+    public function setEval($eval){
+        return 'ssssss';
     }
 }

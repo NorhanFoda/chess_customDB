@@ -1,6 +1,30 @@
 var board,
     game = new Chess();
 
+    //evaluate action_library
+    var eval_arr = [];
+    $.ajax({
+        url: "http://127.0.0.1:8000/allReacions",
+        type: "GET",
+        dataType: "json",
+        success: function(data){
+            for(var i = 0; i < data.length; i++){
+                game.load(data[i].black_reaction_fen);
+                eval = -evaluateBoard(game.board());
+                eval_arr[i] = eval;
+            }
+            console.log(eval_arr);
+            $.ajax({
+                url: "http://127.0.0.1:8000/reactions/setEval/"+eval_arr,
+                type: "PUT",
+                dataType: "json",
+                success: function(data2){
+                    console.log(data2);
+                }
+            });
+        }
+    });
+
 /*The "AI" part starts here */
 var minimaxRoot = function(depth, game, isMaximisingPlayer, white_move) {
 
@@ -54,7 +78,7 @@ var minimax = function (depth, game, alpha, beta, isMaximisingPlayer) {
     positionCount++;
     if (depth === 0) {
         eval1 = -evaluateBoard(game.board());
-        //custom = evaluate(game);
+        // custom = evaluate(game);
         return eval1;
     }
 
