@@ -39,14 +39,20 @@ class ChessController extends Controller
     }
 
     public function updateEval($id, $eval){ 
-        return 'update';
         $action = Action::find($id);
         $action->eval = $eval;
         $action->save();
         return 'eval updated  '.$id.'    '.$eval;
     }
 
-    public function setEval($eval){
-        return 'ssssss';
+    public function setEval(Request $request){
+        $arr = explode(',', $request->eval_arr);
+        for($i = 1; $i <= count($arr); $i++){
+            $action = Action::find($i);
+            if($action){
+                $action->eval = $arr[$i];
+                $action->save();
+            }
+        }
     }
 }
