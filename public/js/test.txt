@@ -282,12 +282,18 @@ TOTAL:
 loss: 8 win: 14 draw: 8
 
 3- Overall perfomance testing: 
-==> ( Minimax + CUstomEval + myDB ) VS ( Paper )
+==> ( Minimax + CustomEval + myDB ) VS ( Paper )
 loss: 1 win: 4 draw: 5
 loss: 4 win: 5 draw: 1
 loss: 1 win: 3 draw: 6
-TOTAL:
-loss: 6 win: 12 draw: 12
+TOTAL: loss: 6 win: 12 draw: 12
+
+3repeated= Overall performance testing: ===========================================================>>>>>>> NEW
+==> ( Minimax + CustomEval + myDB ) VS ( Paper )
+loss:6 win:15 draw:9
+loss:4 win:10 draw:16
+loss:1 win:6 draw:3
+TOTAL: loss:17 win:43 draw:40
 
 4- Similarity: ==============> BAD
 loss: 6 win: 2 draw: 2
@@ -297,5 +303,5 @@ TOTAL:
 loss: 13 win: 7 draw: 10
 
 
-
-win: 1
+4repeated- Similarity: ==============> Good ===============================================>>>>>>>> NEW
+loss:7 win:17 draw:6
